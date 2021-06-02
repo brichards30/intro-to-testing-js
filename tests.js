@@ -46,3 +46,4 @@ describe('isFive', function() {
         expect(typeof isFive).toBe('function')
     });
 });
+str
