@@ -16,5 +16,5 @@ function sayHello(name) {
     } //else if (name === false) {
     return 'Hello, World!';
 
-
 }
+function isFive()
