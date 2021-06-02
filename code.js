@@ -4,7 +4,8 @@ function helloWorld() {
 }
 
 function sayHello(name) {
-    if (name === "Jaymes") {
+    return 'Hello, ' + name + '!';
+    /*if (name === "Jaymes") {
         return "Hello, Jaymes!"
     } else if (name === "Alex") {
         return 'Hello, Alex!';
@@ -12,4 +13,5 @@ function sayHello(name) {
         return 'Hello, Pat!';
     }
     return 'Hello, World!'
+     */
 }
