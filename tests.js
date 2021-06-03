@@ -13,13 +13,14 @@
       expect(helloWorld()).not.toBe(undefined);
     });
 });
+*/
 
 describe('sayHello', function() {
     it('should be a defined function', function() {
         expect(typeof sayHello).toBe('function');
     });
     it('should return a string when called', function() {
-        expect(typeof helloWorld()).toBe("function");
+        expect(typeof sayHello()).toBe("string");
     });
     it('should return the string "Hello, Jaymes!" when executed', function() {
         expect(sayHello('Jaymes')).toBe("Hello, Jaymes!");
@@ -30,7 +31,7 @@ describe('sayHello', function() {
     it('should return the string "Hello, Pat!" when executed', function() {
         expect(sayHello('Pat')).toBe('Hello, Pat!');
     });
-    it('should return the string "Hello, World!" when executed', function() {
+    it('should return "Hello, World!" when executed with no arguments', function() {
         expect(sayHello()).toBe("Hello, World!");
     });
     it('should return the string "Hello, World!" when executed', function() {
@@ -39,8 +40,17 @@ describe('sayHello', function() {
     it('should return the string "Hello, World!" when executed', function() {
         expect(sayHello(false)).toBe("Hello, World!");
     });
+    it('should return "Hello, World!" when executed', function() {
+        expect(sayHello(null)).toBe("Hello, World!");
+    });
+    it('should return "Hello, World!" when executed', function() {
+        expect(sayHello("")).toBe("Hello, World!");
+    });
+    it('should return "Hello, World!" when executed', function() {
+        expect(sayHello("5")).toBe("Hello, World!");
+    });
 });
-*/
+
 //Unit tests for isFive
 describe('isFive', function() {
     it('should be a defined function', function() {
@@ -49,9 +59,10 @@ describe('isFive', function() {
     it('should return a boolean when called', function() {
         expect(isFive(5)).toBe(true);
     });
-    it('should return a boolean when called', function() {
+    it('should return a false when called', function() {
         expect(isFive("5")).toBe(false)
     });
+
 });
 
 //Unit tests for isEven

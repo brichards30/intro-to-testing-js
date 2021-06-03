@@ -4,19 +4,17 @@ function helloWorld() {
 }
 
 function sayHello(name) {
-    return 'Hello, ' + name + '!';
-    /*if (name === "Jaymes") {
-        return "Hello, Jaymes!"
-    } else if (name === "Alex") {
-        return 'Hello, Alex!';
-    } else if (name === "Pat") {
-        return 'Hello, Pat!';
-    } else if (name === true) {
-        return 'Hello, World!';
-    } //else if (name === false) {
-    return 'Hello, World!';
-     */
-}
+
+    if (typeof name === 'string') {
+        if (isNaN(name)) {
+            return 'Hello, ' + name + '!';
+        }
+
+    }
+        return "Hello, World!";
+
+    }
+
 function isFive(value) {
         if (value === 5) {
             return true;
@@ -30,8 +28,4 @@ function isEven(value) {
     } else if (value % 2 >= 1) {
         return false;
     }
-
 }
-
-console.log(isEven(-2));
-console.log(isEven(13));
