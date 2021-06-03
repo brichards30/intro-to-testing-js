@@ -47,10 +47,13 @@ describe('isFive', function() {
         expect(typeof isFive).toBe('function');
     });
     it('should return a boolean when called', function() {
-        expect(isFive(5)).toBe("boolean");
+        expect(isFive(5)).toBe(true);
     });
-    it('should return a boolean when executed', function() {
-        expect(isFive("5")).toBe("boolean");
+    it('should return a boolean when called', function() {
+        expect(isFive("5")).toBe(false)
     });
+
+
 });
+
 

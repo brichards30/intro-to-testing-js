@@ -4,8 +4,8 @@ function helloWorld() {
 }
 
 function sayHello(name) {
-    // return 'Hello, ' + name + '!';
-    if (name === "Jaymes") {
+    return 'Hello, ' + name + '!';
+    /*if (name === "Jaymes") {
         return "Hello, Jaymes!"
     } else if (name === "Alex") {
         return 'Hello, Alex!';
@@ -15,10 +15,12 @@ function sayHello(name) {
         return 'Hello, World!';
     } //else if (name === false) {
     return 'Hello, World!';
-
+     */
 }
 function isFive(value) {
-    if (value === 5) {
-        return true;
-    } else if ()
+        if (value === 5) {
+            return true;
+        } else if (value !== 5) {
+            return false;
+        }
 }
