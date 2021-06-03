@@ -17,4 +17,6 @@ function sayHello(name) {
     return 'Hello, World!';
 
 }
-function isFive()
+function isFive() {
+    return 'Hey';
+}
