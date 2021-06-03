@@ -24,3 +24,14 @@ function isFive(value) {
             return false;
         }
 }
+function isEven(value) {
+    if (value % 2 === 0) {
+        return true;
+    } else if (value % 2 >= 1) {
+        return false;
+    }
+
+}
+
+console.log(isEven(-2));
+console.log(isEven(13));
