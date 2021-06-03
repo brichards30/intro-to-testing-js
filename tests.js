@@ -19,7 +19,7 @@ describe('sayHello', function() {
         expect(typeof sayHello).toBe('function');
     });
     it('should return a string when called', function() {
-        expect(typeof helloWorld()).toBe("string");
+        expect(typeof helloWorld()).toBe("boolean");
     });
     it('should return the string "Hello, Jaymes!" when executed', function() {
         expect(sayHello('Jaymes')).toBe("Hello, Jaymes!");
@@ -40,15 +40,17 @@ describe('sayHello', function() {
         expect(sayHello(false)).toBe("Hello, World!");
     });
 });
-
+*/
+//Unit tests for isFive
 describe('isFive', function() {
     it('should be a defined function', function() {
         expect(typeof isFive).toBe('function');
     });
+    it('should return a boolean when called', function() {
+        expect(isFive(5)).toBe("boolean");
+    });
+    it('should return a boolean when executed', function() {
+        expect(isFive("5")).toBe("boolean");
+    });
 });
 
- */
-
-describe('isEven', function() {
-
-}
