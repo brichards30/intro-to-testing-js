@@ -60,7 +60,7 @@ describe('isEven', function() {
         expect(typeof isFive).toBe('function');
         });
     it('should return a boolean when called', function() {
-        expect(isEven()).toBe(Boolean(true | false));
+        expect(isEven()).toBe('Boolean');
         });
     it('should return a boolean when called', function() {
         expect(isEven(2)).toBe(Boolean(true | false));
