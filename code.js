@@ -5,14 +5,10 @@ function helloWorld() {
 
 function sayHello(name) {
 
-    if (typeof name === 'string') {
-        if (isNaN(name)) {
+    if (typeof name === 'string' && isNaN(name)) {
             return 'Hello, ' + name + '!';
         }
-
-    }
         return "Hello, World!";
-
     }
 
 function isFive(value) {
